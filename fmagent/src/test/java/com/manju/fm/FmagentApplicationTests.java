@@ -1,4 +1,4 @@
-package com.nokia.ims.fm;
+package com.manju.fm;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.nokia.ims.fm;
+package com.manju.fm;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
