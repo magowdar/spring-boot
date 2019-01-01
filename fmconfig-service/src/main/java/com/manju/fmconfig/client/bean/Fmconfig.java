@@ -1,4 +1,4 @@
-package com.nokia.ims.fmconfig.client.bean;
+package com.manju.fmconfig.client.bean;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

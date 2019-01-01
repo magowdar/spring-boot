@@ -1,4 +1,4 @@
-package com.nokia.ims.fmconfig.client;
+package com.manju.fmconfig.client;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

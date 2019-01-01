@@ -1,7 +1,7 @@
-package com.nokia.ims.fmconfig.client.controller;
+package com.manju.fmconfig.client.controller;
 
 
-import com.nokia.ims.fmconfig.client.bean.Fmconfig;
+import com.manju.fmconfig.client.bean.Fmconfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
