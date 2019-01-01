@@ -1,0 +1,100 @@
+# List of EventCorrelations
+#
+# Description:
+#       This is a component specific description file of event correlations.
+#
+# Syntax:
+#       [ abateId errorIdList comparisonString; ]
+#       comment lines start with '#'
+#
+# Attributes:
+#       abateId:     eventSet@eventNum of an abatement event
+#       errorIdList: a ',' separated list of eventSet@eventNum
+#                    of error events which might be cleared
+#       comparison:  describes in postfix notation which parameter of the
+#                    abatement is to be compared with which parameter of
+#                    an error in that line and how.
+#                    e.g. the string '1,2,s2,2,s=;' means that the error message
+#                    will be cleared if its second parameter is equal to
+#                    the second parameter of the abatement message as strings.
+#                    Comparisons can be combined via logical operator AND (&).
+#                    Logical OR is not supported.
+#                    There are 4 predefined variables 'abproc' and 'errproc',
+#                    'abce' and 'errce' that can be used for comparisons.
+#                    'abproc' / 'errproc' is the logical name of the process
+#                    which generated the abatement / error message.
+#                    'abce' / 'errce' the matching node.
+#
+[ 141-8	141-243	1,"abce"V2,"errce"V3,1,s3,2,s=1,1,s2,1,s=&1,2,d2,2,d=&; ]
+[ 141-19	141-16,141-17,141-18	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-21	141-20	1,"abce"V2,"errce"V3,1,s3,2,s=1,2,s2,2,s=&; ]
+[ 141-23	141-22	1,"abce"V2,"errce"V3,1,s3,2,s=1,2,s2,2,s=&; ]
+[ 141-25	141-27	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-25	141-28	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-25	141-36	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-25	141-37	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-26	141-27	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-26	141-28	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-26	141-36	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-26	141-37	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-32	141-31,141-33	1,"abce"V2,"errce"V3,1,s3,2,s=1,3,s2,3,s=&; ]
+[ 141-32	141-30	1,"abce"V2,"errce"V3,1,s3,2,s=1,3,s2,2,s=&; ]
+[ 141-42	141-35	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-42	141-39	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-42	141-40	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-42	141-41	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-44	141-43	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-45	141-43	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-45	141-47	1,"abce"V2,"errce"V3,1,s3,2,s=1,2,s2,2,s=&; ]
+[ 141-53	141-51	1,"abce"V2,"errce"V3,1,s3,2,s=1,2,d2,2,d=&1,3,s2,3,s=&; ]
+[ 141-54	141-52	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-59	141-61	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-59	141-62	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-59	141-70	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-59	141-71	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-60	141-61,141-62,141-70,141-71	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-66	141-64	1,"abce"V2,"errce"V3,1,s3,2,s=1,2,s2,2,s=&; ]
+[ 141-66	141-65	1,"abce"V2,"errce"V3,1,s3,2,s=1,2,s2,2,s=&; ]
+[ 141-66	141-67	1,"abce"V2,"errce"V3,1,s3,2,s=1,2,s2,2,s=&; ]
+[ 141-76	141-69	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-76	141-73	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-76	141-74	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-76	141-75	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-78	141-77	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-79	141-77	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-79	141-81	1,"abce"V2,"errce"V3,1,s3,2,s=1,2,s2,2,s=&; ]
+[ 141-87	141-85	1,"abce"V2,"errce"V3,1,s3,2,s=1,2,d2,2,d=&1,3,s2,3,s=&; ]
+[ 141-88	141-86	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-94	141-93	1,1,s2,1,s=1,2,s2,2,s=&; ]
+[ 141-99	141-98	1,1,s2,1,s=1,2,s2,2,s=&; ]
+[ 141-136	141-138	1,"abproc"V2,"errproc"V3,1,s3,2,s=1,2,d2,2,d=&; ]
+[ 141-137	141-139	1,"abproc"V2,"errproc"V3,1,s3,2,s=1,2,d2,2,d=&; ]
+[ 141-245	141-244	1,"abce"V2,"errce"V3,1,s3,2,s=1,2,d2,1,d=&; ]
+[ 141-248	141-247	1,"abproc"V2,"errproc"V3,1,s3,2,s=1,1,s2,1,s=&; ]
+[ 141-252	141-249	1,"abproc"V2,"errproc"V3,1,s3,2,s=1,1,s2,1,s=&1,2,s2,2,s=&; ]
+[ 141-256	141-250	1,"abce"V2,"errce"V3,1,s3,2,s=1,1,s2,1,s=&1,2,s2,2,s=&; ]
+[ 141-257	141-7	1,"abce"V2,"errce"V3,1,s3,2,s=1,1,s2,1,s=&; ]
+[ 141-263	141-262	1,"abproc"V2,"errproc"V3,1,s3,2,s=1,1,s2,1,s=&1,5,s2,5,s=&; ]
+[ 141-319	141-318	1,"abce"V2,"errce"V3,1,s3,2,s=1,1,s2,1,s=&; ]
+[ 141-321	141-320	1,2,d2,2,d=1,3,d2,3,d=&1,4,s2,4,s=&; ]
+[ 141-323	141-322	1,2,s2,2,s=; ]
+[ 141-324	141-325	1,"abproc"V2,"errproc"V3,1,s3,2,s=1,2,d2,2,d=&; ]
+[ 141-328	141-327	1,1,s2,1,s=1,2,s2,2,s=&1,3,s2,3,s=&1,4,s2,4,s=&1,5,s2,5,s=&; ]
+[ 141-338	141-334	1,"abproc"V2,"errproc"V3,1,s3,2,s=1,3,s2,3,s=&; ]
+[ 141-339	141-335	1,"abproc"V2,"errproc"V3,1,s3,2,s=1,2,s2,2,s=&; ]
+[ 141-340	141-336	1,"abproc"V2,"errproc"V3,1,s3,2,s=1,2,s2,2,s=&; ]
+[ 141-344	141-343	1,"abproc"V2,"errproc"V3,1,s3,2,s=1,2,s2,2,s=&; ]
+[ 141-346	141-345	1,"abproc"V2,"errproc"V3,1,s3,2,s=; ]
+[ 141-347	141-260	1,"abproc"V2,"errproc"V3,1,s3,2,s=; ]
+[ 141-350	141-349	1,"abproc"V2,"errproc"V3,1,s3,2,s=; ]
+[ 141-354	141-353	1,"abproc"V2,"errproc"V3,1,s3,2,s=; ]
+[ 141-356	141-355	1,"abce"V2,"errce"V3,1,s3,2,s=1,1,s2,1,s=&1,2,s2,2,s=&; ]
+[ 141-358	141-357	1,"abce"V2,"errce"V3,1,s3,2,s=1,1,s2,1,s=&; ]
+[ 141-360	141-359	1,"abce"V2,"errce"V3,1,s3,2,s=1,2,d2,1,d=&; ]
+[ 141-362	141-361	1,"abproc"V2,"errproc"V3,1,s3,2,s=1,1,s2,1,s=&1,3,s2,3,s=&; ]
+[ 141-364	141-363	1,"abproc"V2,"errproc"V3,1,s3,2,s=1,1,s2,1,s=&1,2,s2,2,s=&1,3,s2,3,s=&; ]
+[ 141-366	141-365	1,"abce"V2,"errce"V3,1,s3,2,s=1,1,s2,1,s=&1,2,s2,2,s=&; ]
+[ 141-370	141-369	1,1,s2,1,s=1,2,s2,2,s=&1,3,s2,3,s=&1,4,s2,4,s=&1,5,s2,5,s=&; ]
+[ 141-372	141-371,141-377	1,"abproc"V2,"errproc"V3,1,s3,2,s=; ]
+[ 141-376	141-373,141-374,141-375	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 141-10159	141-10160	1,"abce"V2,"errce"V3,1,s3,2,s=1,2,s2,2,s=&1,3,s2,3,s=&; ]

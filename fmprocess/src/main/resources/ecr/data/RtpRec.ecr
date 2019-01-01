@@ -1,0 +1,29 @@
+# List of EventCorrelations
+#
+# Description:
+#       This is a component specific description file of event correlations.
+#
+# Syntax:
+#       [ abateId errorIdList comparisonString; ]
+#       comment lines start with '#'
+#
+# Attributes:
+#       abateId:     eventSet@eventNum of an abatement event
+#       errorIdList: a ',' separated list of eventSet@eventNum
+#                    of error events which might be cleared
+#       comparison:  describes in postfix notation which parameter of the
+#                    abatement is to be compared with which parameter of
+#                    an error in that line and how.
+#                    e.g. the string '1,2,s2,2,s=;' means that the error message
+#                    will be cleared if its second parameter is equal to
+#                    the second parameter of the abatement message as strings.
+#                    Comparisons can be combined via logical operator AND (&).
+#                    Logical OR is not supported.
+#                    There are 4 predefined variables 'abproc' and 'errproc',
+#                    'abce' and 'errce' that can be used for comparisons.
+#                    'abproc' / 'errproc' is the logical name of the process
+#                    which generated the abatement / error message.
+#                    'abce' / 'errce' the matching node.
+#
+[ 103-1	103-2,103-3,103-5,103-6,103-7,103-8,103-9,103-40,103-41,103-42,103-43,103-44,103-80,103-82,103-85,103-86,103-87,103-88,103-89,103-90,103-91,103-92,103-98,103-99,103-121,103-122,103-123,103-200,103-201,103-202,103-203,103-210,103-211,103-212,103-213,103-214,103-215,103-216,103-217,103-218,103-219,103-220,103-221,103-222,103-223,103-224,103-225,103-230,103-231,103-232,103-298,103-301,103-302,103-303,103-304,103-351,103-352,103-361,103-362,103-371,103-372,103-401,103-800,103-801,103-802,103-803,103-804,103-805,103-806,103-807,103-808,103-820,103-830,103-1000	1,"abce"V2,"errce"V3,1,s3,2,s=; ]
+[ 103-120	103-3,103-121,103-122	1,"abce"V2,"errce"V3,1,s3,2,s=; ]

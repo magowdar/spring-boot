@@ -1,0 +1,35 @@
+<!-- $Copyright: -->
+<!-- Copyright (C) Nokia Siemens Networks GmbH & Co. KG  2008 -->
+<!-- All rights reserved -->
+<!-- $
+#ident "$Header: RtpConfig.dtd /main/5 2008/07/18 09:37:21 ibrahim $"
+-->
+<!-- Description of configuration -->
+<!ELEMENT RtpConfig     (configuration+)>
+<!ATTLIST RtpConfig
+	name		ID	#REQUIRED
+>
+<!ELEMENT configuration  (machines?|nodes?|component+)>
+<!ATTLIST configuration
+	name		ID	#REQUIRED
+	like		IDREF	#IMPLIED
+	type		(overwrite)	#IMPLIED
+>
+<!ELEMENT machines	EMPTY>
+<!ATTLIST machines
+	valid		CDATA	#REQUIRED
+>
+<!ELEMENT nodes		EMPTY>
+<!ATTLIST nodes
+	valid		CDATA	#REQUIRED
+>
+<!ELEMENT component      (param+)>
+<!ATTLIST component
+	name		(general|linux|subsystems|solid|snm|nm|ctx|tic|onc|ip|adm)	#REQUIRED
+	like		IDREF	#IMPLIED
+>
+<!ELEMENT param         EMPTY>
+<!ATTLIST param
+	name		CDATA	#REQUIRED
+	value		CDATA	#IMPLIED
+>

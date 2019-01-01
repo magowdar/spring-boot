@@ -1,0 +1,50 @@
+# List of EventCorrelations
+#
+# Description:
+#       This is a component specific description file of event correlations.
+#
+# Syntax:
+#       [ abateId errorIdList comparisonString; ]
+#       comment lines start with '#'
+#
+# Attributes:
+#       abateId:     eventSet@eventNum of an abatement event
+#       errorIdList: a ',' separated list of eventSet@eventNum
+#                    of error events which might be cleared
+#       comparison:  describes in postfix notation which parameter of the
+#                    abatement is to be compared with which parameter of
+#                    an error in that line and how.
+#                    e.g. the string '1,2,s2,2,s=;' means that the error message
+#                    will be cleared if its second parameter is equal to
+#                    the second parameter of the abatement message as strings.
+#                    Comparisons can be combined via logical operator AND (&).
+#                    Logical OR is not supported.
+#                    There are 4 predefined variables 'abproc' and 'errproc',
+#                    'abce' and 'errce' that can be used for comparisons.
+#                    'abproc' / 'errproc' is the logical name of the process
+#                    which generated the abatement / error message.
+#                    'abce' / 'errce' the matching node.
+#
+[ 119-3	142-30003,142-30007,142-30008,142-30010,142-30011,142-30012,142-30014,142-30015,142-30018,142-30019,142-30020	1,1,s"SOLID"=; ]
+[ 142-30013	142-30014,142-30015,142-30020 ]
+[ 142-30016	142-30017	1,2,s2,2,s=; ]
+[ 142-30016	142-30018,142-30019,142-30585 ]
+[ 142-30110	142-30112	1,2,s2,2,s=; ]
+[ 142-30111	142-30113	1,2,s2,2,s=; ]
+[ 142-30116	142-30115	1,2,s2,2,s=; ]
+[ 142-30128	142-30127	1,2,s2,2,s=; ]
+[ 142-30142	142-30141,142-30143 ]
+[ 142-30201	142-30200,142-30203,142-30204,142-30205,142-30206,142-30207 ]
+[ 142-30221	142-30220,142-30222 ]
+[ 142-30224	142-30223,142-30225,142-30226,142-30227 ]
+[ 142-30231	142-30400,142-30403 ]
+[ 142-30232	142-30230 ]
+[ 142-30280	142-30285 ]
+[ 142-30300	142-30302,142-30303,142-30304,142-30307 ]
+[ 142-30531	142-30532,142-30533,142-30534,142-30535,142-30536,142-30537,142-30538,142-30539 ]
+[ 142-30551	142-30559 ]
+[ 142-30552	142-30550,142-30554,142-30556,142-30558 ]
+[ 142-30553	142-30562 ]
+[ 142-30570	142-30571,142-30573 ]
+[ 142-30637	142-30638	1,2,s2,2,s=; ]
+[ 142-32001	142-32002 ]

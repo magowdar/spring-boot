@@ -1,0 +1,28 @@
+# List of EventCorrelations
+#
+# Description:
+#       This is a component specific description file of event correlations.
+#
+# Syntax:
+#       [ abateId errorIdList comparisonString; ]
+#       comment lines start with '#'
+#
+# Attributes:
+#       abateId:     eventSet@eventNum of an abatement event
+#       errorIdList: a ',' separated list of eventSet@eventNum
+#                    of error events which might be cleared
+#       comparison:  describes in postfix notation which parameter of the
+#                    abatement is to be compared with which parameter of
+#                    an error in that line and how.
+#                    e.g. the string '1,2,s2,2,s=;' means that the error message
+#                    will be cleared if its second parameter is equal to
+#                    the second parameter of the abatement message as strings.
+#                    Comparisons can be combined via logical operator AND (&).
+#                    Logical OR is not supported.
+#                    There are 4 predefined variables 'abproc' and 'errproc',
+#                    'abce' and 'errce' that can be used for comparisons.
+#                    'abproc' / 'errproc' is the logical name of the process
+#                    which generated the abatement / error message.
+#                    'abce' / 'errce' the matching node.
+#
+[ 107-1	117-1,117-2,117-3,117-4,117-6,117-7,117-9,117-10,117-11	2,"errproc"V1,1,s3,2,s=; ]

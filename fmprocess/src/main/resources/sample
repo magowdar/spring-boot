@@ -1,0 +1,17 @@
+{
+    "sequenceId": 111,
+    "ecompSequenceId": 0,
+    "eventType": 1,
+    "eventSeverity": 1,
+    "specificProblem": 1,
+    "eventTime": 1545118146754,
+    "ecompEventTime": 0,
+    "eventId": "evtId1",
+    "ecompEventId": 0,
+    "eventCEName": "evtCEName1",
+    "eventProcessName": "evtProcName1",
+    "eventShortText": "shortTxt1",
+    "eventParameter": "evtParam1",
+    "eventFaultyObject": "evtFaultyObj1",
+    "eventClearUser": "clearUsr1"
+  },
