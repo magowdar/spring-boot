@@ -1,4 +1,4 @@
-package com.nokia.ims.fmconfig.server;
+package com.manju.fmconfig.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
