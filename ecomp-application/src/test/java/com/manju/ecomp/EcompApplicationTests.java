@@ -1,4 +1,4 @@
-package com.nokia.ims.fmprocess.alarmsjpa;
+package com.manju.ecomp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class AlarmsJpaApplicationTests {
+public class EcompApplicationTests {
 
     @Test
     public void contextLoads() {
