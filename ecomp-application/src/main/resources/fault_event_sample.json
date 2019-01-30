@@ -1,0 +1,37 @@
+{
+  "event": {
+    "commonEventHeader": {
+      "version": 3.0,
+      "eventName": "Fault_vCSCFicsf_DBErrror-170-342",
+      "domain": "fault",
+      "eventId": "001-000000000001",
+      "eventType": "alarmType",
+      "nfcNamingCode": "CDI",
+      "nfNamingCode": "CSCF",
+      "sourceId": "source_entity_id_123abc",
+      "sourceName": "source_entity_name_oam",
+      "reportingEntityId": "reporting_entity_id_123abc",
+      "reportingEntityName": "reporting_entity_name_oam",
+      "priority": "High",
+      "startEpochMicrosec": 1527089079615,
+      "lastEpochMicrosec": 1527089079615,
+      "sequence": 0
+    },
+    "faultFields": {
+      "faultFieldsVersion": 2.0,
+      "eventSeverity": "MAJOR",
+      "eventSourceType": "sourceType",
+      "eventCategory": "eventCatagory",
+      "alarmCondition": "alarmCondition",
+      "specificProblem": "specificProblem",
+      "vfStatus": "Active",
+      "alarmInterfaceA": "alarmInterfaceA",
+      "alarmAdditionalInformation": [
+        {
+          "name": "AlarmType",
+          "value": "value"
+        }
+      ]
+    }
+  }
+}

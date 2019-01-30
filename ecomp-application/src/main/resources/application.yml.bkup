@@ -1,0 +1,9 @@
+server:
+  port: 8443
+logging:
+  level: debug
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+  file: C:\\spring-boot\\ecomp-application.log
+

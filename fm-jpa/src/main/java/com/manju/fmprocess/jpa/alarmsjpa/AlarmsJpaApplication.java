@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableFeignClients("com.nokia.ims.fmprocess.jpa.alarmsjpa")
+@EnableFeignClients("com.manju.fmprocess.jpa.alarmsjpa")
 public class AlarmsJpaApplication {
 
     public static void main(String[] args) {
